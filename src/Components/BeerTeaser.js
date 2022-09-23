@@ -4,7 +4,7 @@ import "./BeerTeaser.css";
 const BeerTeaser = (props) => {
   return (
     <article className="beer-teaser">
-      <img src={props.beerImage}></img>
+      <img src={props.beerImage} alt=""></img>
       <div className="content-wrapper">
         <h2>{props.beerName}</h2>
         <h3>{props.beerTagline}</h3>

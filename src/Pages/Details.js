@@ -17,7 +17,7 @@ const Details = () => {
     <>
       <main>
         <section className="beer-details-page">
-          <img src={beers.image_url}></img>
+          <img src={beers.image_url} alt=""></img>
           <h2>{beers.name}</h2>
           <h3>{beers.tagline}</h3>
           <div className="beer-details">
