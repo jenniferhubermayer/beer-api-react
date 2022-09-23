@@ -1,0 +1,56 @@
+.beer-teaser {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 33px;
+  border-bottom: 2px solid rgba(51, 51, 51, 0.5);
+  margin: 0 19px;
+  width: 100%;
+}
+
+.beer-teaser:nth-last-of-type(1) {
+  margin-bottom: 129px;
+}
+
+.beer-teaser img {
+  height: 35vh;
+  width: 25vw;
+  object-fit: contain;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 11px;
+}
+
+.beer-teaser h2 {
+  font-weight: 500;
+  font-size: 30px;
+  color: #333333;
+}
+
+.beer-teaser h3 {
+  font-weight: 900;
+  font-size: 18px;
+  color: #ffca41;
+  margin-bottom: 13px;
+}
+
+.beer-teaser p {
+  font-weight: 500;
+  font-size: 15px;
+  color: #333333;
+  margin-bottom: 19px;
+}
+
+.beer-teaser a {
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  background: #ffca41;
+  border-radius: 40px;
+  padding: 3px 23px;
+  cursor: pointer;
+}
+
+.beer-teaser a:hover {
+  background: #ecb938;
+}
