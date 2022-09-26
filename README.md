@@ -1,4 +1,4 @@
-# simple-blog-react-router-dynamic | Simple Blog
+# beer-api-react | Beer App using Beers Api
 
 In this challenge I created a beer app using Beers Api from https://github.com/ironhack-labs/lab-react-ironbeers. This project is build with React and uses Router DOM Package.
 
