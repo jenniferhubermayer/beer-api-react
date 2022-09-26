@@ -47,14 +47,3 @@
 .beer-details-page .beer-details:nth-last-of-type(1) {
   margin-bottom: 9px;
 }
-
-.beer-details-page .back-link {
-  background-color: #ffca41;
-  background-image: url(../Images/Vector.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 57px;
-  height: 57px;
-  border-radius: 50%;
-  margin-bottom: 126px;
-}
