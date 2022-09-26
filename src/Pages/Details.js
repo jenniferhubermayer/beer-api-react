@@ -13,7 +13,6 @@ import BackButton from "../Components/BackButton";
 const Details = () => {
   const [beers, setBeers] = useState([]);
   let params = useParams();
-  // let beer = beers[params.id]; // WOZU BRAUCHE ICH DA EIGENTLICH? WARUM params.id in die eckigen Klammern?
   useEffect(() => {
     fetch(`https://ih-beers-api2.herokuapp.com/beers/${params.id}`)
       .then((response) => response.json())
