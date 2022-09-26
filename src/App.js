@@ -1,8 +1,14 @@
 import "./App.css";
+
+// PACKAGES
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// PAGES
 import Home from "./Pages/Home";
 import Beers from "./Pages/Beers";
 import Details from "./Pages/Details";
+
+// ----------> FUNCTION FOR APP
 
 function App() {
   return (

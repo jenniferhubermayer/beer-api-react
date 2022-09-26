@@ -1,6 +1,10 @@
-import Teaser from "../Components/Teaser";
-import "./Home.css";
+// PACKAGES
 import { useEffect, useState } from "react";
+
+// COMPONENTS
+import Teaser from "../Components/Teaser";
+
+// ----------> FUNCTION FOR HOME PAGE
 
 const Home = () => {
   const [randomBeer, setRandomBeer] = useState([]);

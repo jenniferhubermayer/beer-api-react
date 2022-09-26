@@ -1,6 +1,11 @@
-import BeerTeaser from "../Components/BeerTeaser";
+// PACKAGES
 import { useEffect, useState } from "react";
+
+// COMPONENTS
+import BeerTeaser from "../Components/BeerTeaser";
 import Footer from "../Components/Footer";
+
+// ----------> FUNCTION FOR BEERS PAGE
 
 const Beers = () => {
   const [beers, setBeers] = useState([]);

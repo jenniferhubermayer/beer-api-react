@@ -1,6 +1,12 @@
-import logo from "../Images/Logo.png";
 import "./Footer.css";
+
+// PACKAGES
 import { Link } from "react-router-dom";
+
+// IMAGES
+import logo from "../Images/Logo.png";
+
+// ----------> FUNCTION FOR FOOTER COMPONENT
 
 const Footer = () => {
   return (

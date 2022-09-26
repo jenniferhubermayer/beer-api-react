@@ -1,5 +1,9 @@
-import { Link } from "react-router-dom";
 import "./BeerTeaser.css";
+
+// PACKAGES
+import { Link } from "react-router-dom";
+
+// ----------> FUNCTION FOR BEER TEASER COMPONENT ON BEERS PAGE
 
 const BeerTeaser = (props) => {
   return (

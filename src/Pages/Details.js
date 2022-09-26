@@ -1,8 +1,14 @@
+import "./Details.css";
+
+// PACKAGES
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+
+// COMPONENTS
 import Footer from "../Components/Footer";
-import "./Details.css";
 import BackButton from "../Components/BackButton";
+
+// ----------> FUNCTION FOR DETAILS PAGE
 
 const Details = () => {
   const [beers, setBeers] = useState([]);
