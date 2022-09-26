@@ -7,12 +7,12 @@ import { Link } from "react-router-dom";
 const Details = () => {
   const [beers, setBeers] = useState([]);
   let params = useParams();
-  let beer = beers[params.id]; // WOZU BRAUCHE ICH DA EIGENTLICH?
+  // let beer = beers[params.id]; // WOZU BRAUCHE ICH DA EIGENTLICH?
   useEffect(() => {
     fetch(`https://ih-beers-api2.herokuapp.com/beers/${params.id}`)
       .then((response) => response.json())
       .then((data) => setBeers(data));
-  }, []);
+  }, [params.id]);
 
   return (
     <>
