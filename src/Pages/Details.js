@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Footer from "../Components/Footer";
 import "./Details.css";
@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 const Details = () => {
   const [beers, setBeers] = useState([]);
   let params = useParams();
+  const navigate = useNavigate();
   // let beer = beers[params.id]; // WOZU BRAUCHE ICH DA EIGENTLICH?
   useEffect(() => {
     fetch(`https://ih-beers-api2.herokuapp.com/beers/${params.id}`)
@@ -30,9 +31,7 @@ const Details = () => {
             <p>{beers.attenuation_level}</p>
           </div>
           <p className="beer-description">{beers.description}</p>
-          <Link to="../beers">
-            <div className="back-link"></div>
-          </Link>
+          <div className="back-link" onClick={() => navigate(-1)}></div>
         </section>
       </main>
       <Footer />
