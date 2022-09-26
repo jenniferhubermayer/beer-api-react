@@ -42,7 +42,7 @@ The task is to create a beer app using an API.
 
 ### Screenshots
 
-![](./screenshot/screenshot.png)
+![](./screenshot/screenshot.jpg)
 
 ### Links
 
