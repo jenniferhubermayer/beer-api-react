@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# simple-blog-react-router-dynamic | Simple Blog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this challenge I created a beer app using Beers Api from https://github.com/ironhack-labs/lab-react-ironbeers. This project is build with React and uses Router DOM Package.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The challenge
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The task is to create a beer app using an API.
 
-### `npm test`
+- Use this API https://github.com/ironhack-labs/lab-react-ironbeers
+- Create the basic structure of your homepage
+  - All beers
+  - Random beer
+- Create a navbar. The navbar is always shown when you are not on the home page and leads back to the start page
+- List the beers. It should contain:
+  - picture
+  - Surname
+  - slogan
+  - Producer (contributed_by)
+  - create an additional link that leads to the detail page of the beer! The link should lead to /beers/:beerId
+- Create the beer detail view:
+  - the picture
+  - the name
+  - the slogan
+  - when it was brewed for the first time (first_brewed)
+  - the attenuation_level
+  - the description
+  - the producer (contributed_by)
+- Create the “random beer” page. Use the random endpoint of the [API](https://ih-beers-api2.herokuapp.com/beers/random). The structure of the page is like the detailed view
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshots
 
-### `npm run build`
+![](./screenshot/screenshot.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Links
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Solution URL: [https://github.com/jenniferhubermayer/beer-api-react](https://github.com/jenniferhubermayer/beer-api-react)
+- Live Site URL: [https://shiny-brioche-5134f8.netlify.app/](https://shiny-brioche-5134f8.netlify.app/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## My process
 
-### `npm run eject`
+### Built with
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React App (using [React Router DOM Package](https://v5.reactrouter.com/))
+- Semantic HTML5 markup
+- CSS (mobile only)
+- Flexbox
+- JavaScript
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Author
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Website - [https://github.com/jenniferhubermayer](https://github.com/jenniferhubermayer)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Acknowledgments
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project has been realized as part of the [super(c)ode](https://www.super-code.de/) "Front-End Boot-Camp 2022".
