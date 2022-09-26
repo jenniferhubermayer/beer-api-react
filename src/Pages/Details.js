@@ -1,15 +1,13 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Footer from "../Components/Footer";
 import "./Details.css";
-import { Link } from "react-router-dom";
+import BackButton from "../Components/BackButton";
 
 const Details = () => {
   const [beers, setBeers] = useState([]);
   let params = useParams();
-  const navigate = useNavigate();
-  console.log(window.history.state);
-  // let beer = beers[params.id]; // WOZU BRAUCHE ICH DA EIGENTLICH?
+  // let beer = beers[params.id]; // WOZU BRAUCHE ICH DA EIGENTLICH? WARUM params.id in die eckigen Klammern?
   useEffect(() => {
     fetch(`https://ih-beers-api2.herokuapp.com/beers/${params.id}`)
       .then((response) => response.json())
@@ -32,8 +30,7 @@ const Details = () => {
             <p>{beers.attenuation_level}</p>
           </div>
           <p className="beer-description">{beers.description}</p>
-          {/* BUG FIXING FOR window.history.state === 0 */}
-          <div className="back-link" onClick={() => navigate(-1)}></div>
+          <BackButton />
         </section>
       </main>
       <Footer />
@@ -42,11 +39,3 @@ const Details = () => {
 };
 
 export default Details;
-
-// let navigateBack = () => {
-//   if (window.history.state === 0) {
-//     let navigateLink = "./";
-//   } else {
-//     let navigateLink = -1;
-//   }
-// };
