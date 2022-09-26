@@ -8,6 +8,7 @@ const Details = () => {
   const [beers, setBeers] = useState([]);
   let params = useParams();
   const navigate = useNavigate();
+  console.log(window.history.state);
   // let beer = beers[params.id]; // WOZU BRAUCHE ICH DA EIGENTLICH?
   useEffect(() => {
     fetch(`https://ih-beers-api2.herokuapp.com/beers/${params.id}`)
@@ -31,6 +32,7 @@ const Details = () => {
             <p>{beers.attenuation_level}</p>
           </div>
           <p className="beer-description">{beers.description}</p>
+          {/* BUG FIXING FOR window.history.state === 0 */}
           <div className="back-link" onClick={() => navigate(-1)}></div>
         </section>
       </main>
@@ -40,3 +42,11 @@ const Details = () => {
 };
 
 export default Details;
+
+// let navigateBack = () => {
+//   if (window.history.state === 0) {
+//     let navigateLink = "./";
+//   } else {
+//     let navigateLink = -1;
+//   }
+// };
